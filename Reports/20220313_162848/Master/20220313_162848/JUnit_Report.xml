@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Master" time="4.784" tests="4" failures="0" errors="0">
+   <testsuite name="Master" tests="4" failures="0" errors="0" time="4.784" skipped="0" timestamp="2022-03-13 16:28:50" hostname="bayuwirab - localhost" id="Test Suites/Master">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/bayuwirab/git/reqres.in-API-test/Reports/20220313_162848/Master/20220313_162848"/>
+         <property name="logFiles" value="/Users/bayuwirab/git/reqres.in-API-test/Reports/20220313_162848/Master/20220313_162848/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="bayuwirab - localhost"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.2.5.208"/>
+      </properties>
+      <testcase name="Test Cases/Users/GET User Test" time="1.601" classname="Test Cases/Users/GET User Test" status="PASSED">
+         <system-out><![CDATA[2022-03-13 16:28:50 - [TEST_CASE][PASSED] - Test Cases/Users/GET User Test: Test Cases/Users/GET User Test
+
+2022-03-13 16:28:50 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Users/GET User")): Send request successfully
+
+2022-03-13 16:28:52 - [MESSAGE][INFO] - HAR: /Users/bayuwirab/git/reqres.in-API-test/Reports/20220313_162848/Master/20220313_162848/requests/main/0.har
+
+2022-03-13 16:28:52 - [MESSAGE][PASSED] - Send request successfully
+
+2022-03-13 16:28:52 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2022-03-13 16:28:52 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-03-13 16:28:52 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.last_name", "Weaver"): Verify element property value successfully
+
+2022-03-13 16:28:52 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Users/DELETE User Test" time="0.858" classname="Test Cases/Users/DELETE User Test" status="PASSED">
+         <system-out><![CDATA[2022-03-13 16:28:52 - [TEST_CASE][PASSED] - Test Cases/Users/DELETE User Test: Test Cases/Users/DELETE User Test
+
+2022-03-13 16:28:52 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Users/DELETE User")): Send request successfully
+
+2022-03-13 16:28:53 - [MESSAGE][INFO] - HAR: /Users/bayuwirab/git/reqres.in-API-test/Reports/20220313_162848/Master/20220313_162848/requests/main/1.har
+
+2022-03-13 16:28:53 - [MESSAGE][PASSED] - Send request successfully
+
+2022-03-13 16:28:53 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 204): Verify response status code successfully
+
+2022-03-13 16:28:53 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Users/CREATE Users Test" time="1.001" classname="Test Cases/Users/CREATE Users Test" status="PASSED">
+         <system-out><![CDATA[2022-03-13 16:28:53 - [TEST_CASE][PASSED] - Test Cases/Users/CREATE Users Test: Test Cases/Users/CREATE Users Test
+
+2022-03-13 16:28:53 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Users/CREATE Users")): Send request successfully
+
+2022-03-13 16:28:54 - [MESSAGE][INFO] - HAR: /Users/bayuwirab/git/reqres.in-API-test/Reports/20220313_162848/Master/20220313_162848/requests/main/2.har
+
+2022-03-13 16:28:54 - [MESSAGE][PASSED] - Send request successfully
+
+2022-03-13 16:28:54 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+2022-03-13 16:28:54 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-03-13 16:28:54 - [TEST_STEP][PASSED] - jsonResponseText = response.getResponseText(): null
+
+2022-03-13 16:28:54 - [TEST_STEP][PASSED] - println(jsonResponseText): null
+
+2022-03-13 16:28:54 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2022-03-13 16:28:54 - [TEST_STEP][PASSED] - jsonResponse = jsonSlurper.parseText(jsonResponseText): null
+
+2022-03-13 16:28:54 - [TEST_STEP][PASSED] - assert id != null : "Response does not contains id!": null
+
+2022-03-13 16:28:54 - [TEST_STEP][PASSED] - assert createdAt != null : "Response does not contains createdAt!": null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Users/UPDATE User Test" time="1.04" classname="Test Cases/Users/UPDATE User Test" status="PASSED">
+         <system-out><![CDATA[2022-03-13 16:28:54 - [TEST_CASE][PASSED] - Test Cases/Users/UPDATE User Test: Test Cases/Users/UPDATE User Test
+
+2022-03-13 16:28:54 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Users/UPDATE User")): Send request successfully
+
+2022-03-13 16:28:55 - [MESSAGE][INFO] - HAR: /Users/bayuwirab/git/reqres.in-API-test/Reports/20220313_162848/Master/20220313_162848/requests/main/3.har
+
+2022-03-13 16:28:55 - [MESSAGE][PASSED] - Send request successfully
+
+2022-03-13 16:28:55 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2022-03-13 16:28:55 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-03-13 16:28:55 - [TEST_STEP][PASSED] - responseText = response.getResponseText(): null
+
+2022-03-13 16:28:55 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2022-03-13 16:28:55 - [TEST_STEP][PASSED] - jsonReponse = jsonSlurper.parseText(responseText): null
+
+2022-03-13 16:28:55 - [TEST_STEP][PASSED] - assert updatedAt != null : "Json response not contains updatedAt!": null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-03-13 16:28:50 - [TEST_SUITE][PASSED] - Master: Test Cases/Users/UPDATE User Test]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

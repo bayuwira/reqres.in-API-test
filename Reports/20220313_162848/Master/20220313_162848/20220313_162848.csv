@@ -1,0 +1,29 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Master,,,,2022-03-13 16:28:50,2022-03-13 16:28:55,4.784s,PASSED
+,,,,,,,
+Test Cases/Users/GET User Test,,,,2022-03-13 16:28:50,2022-03-13 16:28:52,1.601s,PASSED
+"response = sendRequest(findTestObject(""Users/GET User""))",,,,2022-03-13 16:28:50,2022-03-13 16:28:52,1.277s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2022-03-13 16:28:52,2022-03-13 16:28:52,0.017s,PASSED
+"verifyElementPropertyValue(response, ""data.last_name"", ""Weaver"")",,,,2022-03-13 16:28:52,2022-03-13 16:28:52,0.048s,PASSED
+,,,,,,,
+Test Cases/Users/DELETE User Test,,,,2022-03-13 16:28:52,2022-03-13 16:28:53,0.858s,PASSED
+"response = sendRequest(findTestObject(""Users/DELETE User""))",,,,2022-03-13 16:28:52,2022-03-13 16:28:53,0.662s,PASSED
+"verifyResponseStatusCode(response, 204)",,,,2022-03-13 16:28:53,2022-03-13 16:28:53,0.003s,PASSED
+,,,,,,,
+Test Cases/Users/CREATE Users Test,,,,2022-03-13 16:28:53,2022-03-13 16:28:54,1.001s,PASSED
+"response = sendRequest(findTestObject(""Users/CREATE Users""))",,,,2022-03-13 16:28:53,2022-03-13 16:28:54,0.837s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,2022-03-13 16:28:54,2022-03-13 16:28:54,0.004s,PASSED
+jsonResponseText = response.getResponseText(),,,,2022-03-13 16:28:54,2022-03-13 16:28:54,0.009s,PASSED
+println(jsonResponseText),,,,2022-03-13 16:28:54,2022-03-13 16:28:54,0.005s,PASSED
+jsonSlurper = new groovy.json.JsonSlurper(),,,,2022-03-13 16:28:54,2022-03-13 16:28:54,0.001s,PASSED
+jsonResponse = jsonSlurper.parseText(jsonResponseText),,,,2022-03-13 16:28:54,2022-03-13 16:28:54,0.001s,PASSED
+"assert id != null : ""Response does not contains id!""",,,,2022-03-13 16:28:54,2022-03-13 16:28:54,0.000s,PASSED
+"assert createdAt != null : ""Response does not contains createdAt!""",,,,2022-03-13 16:28:54,2022-03-13 16:28:54,0.000s,PASSED
+,,,,,,,
+Test Cases/Users/UPDATE User Test,,,,2022-03-13 16:28:54,2022-03-13 16:28:55,1.040s,PASSED
+"response = sendRequest(findTestObject(""Users/UPDATE User""))",,,,2022-03-13 16:28:54,2022-03-13 16:28:55,0.841s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2022-03-13 16:28:55,2022-03-13 16:28:55,0.004s,PASSED
+responseText = response.getResponseText(),,,,2022-03-13 16:28:55,2022-03-13 16:28:55,0.002s,PASSED
+jsonSlurper = new groovy.json.JsonSlurper(),,,,2022-03-13 16:28:55,2022-03-13 16:28:55,0.000s,PASSED
+jsonReponse = jsonSlurper.parseText(responseText),,,,2022-03-13 16:28:55,2022-03-13 16:28:55,0.001s,PASSED
+"assert updatedAt != null : ""Json response not contains updatedAt!""",,,,2022-03-13 16:28:55,2022-03-13 16:28:55,0.001s,PASSED
